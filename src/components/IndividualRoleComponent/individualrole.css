@@ -1,0 +1,12 @@
+.individual-role{
+    display: flex;
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+.role-text{
+    display: flex;
+    position: relative;
+    text-align: justify;
+}

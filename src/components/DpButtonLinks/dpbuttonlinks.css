@@ -1,0 +1,32 @@
+
+.facebook-button>.MuiSvgIcon-root{
+    position: relative;
+    color:darkblue;
+    margin-right: 20px;
+}
+
+
+.twitter-button>.MuiSvgIcon-root{
+    position: relative;
+    color: blue;
+    margin-right: 20px;
+    
+}
+
+.instagram-button>.MuiSvgIcon-root{
+    
+    position: relative;
+    color: blue;
+    margin-right: 20px;
+}
+
+.linkedin-button>.MuiSvgIcon-root{
+    position: relative;
+    color: darkred;
+    margin-right: 20px;
+}
+
+.github-button>.MuiSvgIcon-root{
+    position: relative;
+    color: black;
+}

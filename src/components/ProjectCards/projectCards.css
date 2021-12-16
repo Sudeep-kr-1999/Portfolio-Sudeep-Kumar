@@ -1,0 +1,97 @@
+.projectCards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.projectCards:hover {
+  transform: translateY(-20px);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.project-logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.project-logo > img {
+  border-radius: 100%;
+  filter: drop-shadow(0px 0px 10px blue);
+}
+.project-title {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: darkblue;
+  width: 450px;
+}
+
+.technology-used {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: darkred;
+  width: 450px;
+}
+
+.project-description {
+  position: relative;
+  display: flex;
+  flex: 1;
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  width: 450px;
+}
+.project-link {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+.project-link > a {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  text-shadow: 0px 0px 2px green;
+}

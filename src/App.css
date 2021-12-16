@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap");
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: scroll;
+  background-position: center;
+  position: relative;
+  background-color: lightcyan;
+}
+.App::-webkit-scrollbar {
+  display: none;
+}
+.navigationSection {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+  display: flexbox;
+  background: rgba(255, 255, 255, 0.08);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+@media screen and (max-width: 1600px) {
+  .navigationSection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.08);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+  }
+}

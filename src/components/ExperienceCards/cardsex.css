@@ -1,0 +1,140 @@
+.experience-cards {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  min-width: fit-content;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+.basic-details {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.roles-learning-container {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.working-title {
+  display: flex;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding: 10px;
+  font-size: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.working-organisation {
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  padding: 10px;
+  align-items: center;
+  color: black;
+  flex-wrap: wrap;
+}
+.duration {
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  align-items: center;
+  color: black;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.experience-description {
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  flex-direction: column;
+  padding: 10px;
+  padding-left: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.role-in-experience {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.role-heading {
+  display: flex;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  padding: 10px;
+  color: darkblue;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.role-description {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.learning-outcomes {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.learning-outcome-heading {
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  padding: 10px;
+  color: darkblue;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.learning-outcome-descripton {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+}

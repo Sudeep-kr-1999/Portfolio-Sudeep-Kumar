@@ -1,0 +1,49 @@
+.skills-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  flex-wrap: wrap-reverse;
+  background-size: cover;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.skills-details-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.skills-heading {
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  justify-content: center;
+}
+.skill-points-container {
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  margin-bottom: 50px;
+}
+.skill-points-container::-webkit-scrollbar {
+  display: none;
+  background: gray;
+  width: 8px;
+  border-radius: 500px;
+}
+.skill-points-container::-webkit-scrollbar-thumb {
+  display: flex;
+  background: yellowgreen;
+  border-radius: 500px;
+}

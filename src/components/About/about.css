@@ -1,0 +1,87 @@
+.about-landing-page {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  padding: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-pic-division {
+  position: relative;
+  display: block;
+  justify-content: center;
+}
+
+.about-pic-division > img {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+.about-details-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  height: fit-content;
+  flex-basis: 50%;
+  flex-wrap: wrap;
+}
+.about-heading {
+  position: relative;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+}
+.about-text {
+  position: relative;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.about-button {
+  position: relative;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  font-weight: 600;
+}
+.contact-me {
+  position: relative;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: aqua;
+  align-items: center;
+  color: black;
+  box-shadow: 0px 0px 20px 2px gray;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.download-cv {
+  position: relative;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: aqua;
+  color: black;
+  box-shadow: 0px 0px 20px 2px gray;
+  padding-left: 30px;
+  padding-right: 30px;
+}

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+.top-nav-navoptions {
+  position: relative;
+  display: flex;
+  flex: 0.75;
+  justify-content: space-between;
+  margin-left: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ background: transparent;
+}
+
+@media screen and (max-width: 1600px) {
+  .top-nav-navoptions {
+    position: relative;
+    display: none;
+  }
+}

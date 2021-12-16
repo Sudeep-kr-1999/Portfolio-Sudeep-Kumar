@@ -1,0 +1,27 @@
+.education-details-container {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.education-heading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: wavy;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 100px;
+}
+.education-details-cards {
+  flex: 1;
+  position: relative;
+  display: flex;
+  padding: 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}

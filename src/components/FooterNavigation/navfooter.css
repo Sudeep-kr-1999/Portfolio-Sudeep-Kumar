@@ -1,0 +1,53 @@
+.footer-nav {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  color:black;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+.footer-nav-home {
+  display: flex;
+  position: relative;
+  margin: 5px;
+}
+.footer-nav-about {
+  display: flex;
+  position: relative;
+  margin: 5px;
+}
+.footer-nav-education {
+  display: flex;
+  position: relative;
+  margin: 5px;
+}
+.footer-nav-skills {
+  display: flex;
+  position: relative;
+  margin: 5px;
+}
+.footer-nav-experience {
+  display: flex;
+  position: relative;
+  margin: 5px;
+}
+.footer-nav-projects {
+  display: flex;
+  position: relative;
+  margin: 5px;
+}
+.footer-nav-certfications {
+  display: flex;
+  position: relative;
+  margin: 5px;
+}
+.footer-nav-contacts {
+  display: flex;
+  position: relative;
+  margin: 5px;
+}
