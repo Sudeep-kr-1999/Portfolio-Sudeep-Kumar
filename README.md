@@ -1,1 +1,1 @@
-This project is a Personal Portfoli Project Using React JS
+This project is a Personal Portfolio Project Using React JS
