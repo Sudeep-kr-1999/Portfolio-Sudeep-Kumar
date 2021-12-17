@@ -1,13 +1,13 @@
 import React from "react";
 import IndividualLearningOutcome from "../IndividualLearningOutcomeComponent/IndividualLearningOutcome";
 import IndividualRole from "../IndividualRoleComponent/IndividualRole";
-import Zoom from "react-reveal/Zoom";
+import Bounce from 'react-reveal/Bounce';
 import "./cardsex.css";
 function ExperienceCards(props) {
   const rolesList = props.role;
   const learningOutcomeList = props.learningOutcome;
   return (
-    <Zoom duration={2000} delay={500}>
+    <Bounce bottom duration={2000} delay={500}>
       <div className="experience-cards">
         <div className="basic-details">
           <div className="working-title">{props.title}</div>
@@ -35,7 +35,7 @@ function ExperienceCards(props) {
           </div>
         </div>
       </div>
-    </Zoom>
+    </Bounce>
   );
 }
 

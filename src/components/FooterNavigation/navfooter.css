@@ -3,11 +3,11 @@
   position: relative;
   flex-direction: column;
   justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: x-large;
-  color:black;
+  color: black;
   padding: 20px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   flex-wrap: wrap;
 }

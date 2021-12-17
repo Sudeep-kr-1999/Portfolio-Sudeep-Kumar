@@ -4,6 +4,17 @@ import aboutPic from "./assets/profile.png";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 function About() {
+  const aboutString=`Hello, My name is Sudeep Kumar and currently I am a third year
+  undergraduate persuing Bachelor of Technology in Computer Science
+  and Engineering (B.Tech CSE) from Lovely Professional University,
+  Phagwara, Punjab. Talking about me , I am tech enthusiast who is
+  very much interested in finding reasons for any actions. I am very
+  much interested in the field of Development which includes Full
+  Stack Web Development , Android Development and IOS as well. I
+  always feels that there is no end of learing and therfore i always
+  try to learn new technlogies related to development to enhance
+  my skills further and I am looking forward to contribute with my
+  skills the best way possible for the betterment of the society.`
   return (
     <Zoom>
       <div className="about-landing-page">
@@ -16,23 +27,7 @@ function About() {
           <div className="about-details-section">
             <div className="about-heading">ABOUT ME</div>
             <div className="about-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
-              ipsa quam consectetur corporis omnis laboriosam officia rem
-              voluptatem quis quibusdam accusantium, error fuga voluptate
-              recusandae itaque accusamus nihil explicabo voluptatibus porro
-              ullam. Quis, libero. Provident amet dolores aliquid dolor nemo
-              enim tempore laboriosam consequatur, dolorum corporis beatae qui
-              doloremque possimus voluptas assumenda repellendus pariatur
-              laudantium sequi alias iste sunt vel porro nihil fugiat? Ea.
-              jiowioewioeioewoueerrrLorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
-              ipsa quam consectetur corporis omnis laboriosam officia rem
-              voluptatem quis quibusdam accusantium, error fuga voluptate
-              recusandae itaque accusamus nihil explicabo voluptatibus porro
-              ullam. Quis, libero. Provident amet dolores aliquid dolor nemo
-              enim tempore laboriosam consequatur, dolorum corporis beatae qui
-              doloremque possimus voluptas assumenda repellendus pariatur
-              laudantium sequi alias iste sunt vel porro nihil fugiat? Ea.
-              jiowioewioeioewoueerrr
+              {aboutString}
             </div>
             <div className="about-button">
               <div className="contact-me">Contact Me</div>

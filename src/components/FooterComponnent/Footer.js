@@ -53,7 +53,7 @@ function Footer() {
   ];
 
   return (
-    <Bounce right duration={2000}>
+    <Bounce bottom duration={2000}>
       <div className="footer-container">
         <div className="upper-footer">
           <div className="address-footer">

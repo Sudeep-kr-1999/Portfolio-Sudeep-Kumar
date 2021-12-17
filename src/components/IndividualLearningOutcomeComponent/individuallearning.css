@@ -1,12 +1,11 @@
 .individual-outcome {
   position: relative;
   display: flex;
-  margin: 10px;
   padding: 10px;
   justify-content: center;
 }
 .outcome-text {
   display: flex;
   position: relative;
-  text-align: justify;
+  text-align: center;
 }

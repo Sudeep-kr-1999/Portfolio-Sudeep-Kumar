@@ -4,15 +4,13 @@ import DpButtonLinks from "../DpButtonLinks/DpButtonLinks";
 import DpContactDetails from "../DpContactDetails/DpContactDetails";
 import profile from "./assets/profile.png";
 import Bounce from "react-reveal/Bounce";
-import Slide from "react-reveal/Slide";
 function DisplayPage() {
   return (
     <>
-      <Slide right duration={2000}>
         <div className="display-page-body">
           <div className="display-page">
             <div className="display-page-image">
-              <Bounce left duration={2500} style={{ overflow: "hidden" }}>
+              <Bounce bottom duration={3000} style={{ overflow: "hidden" }}>
                 <img id="image-display" src={profile} alt="" />
               </Bounce>
             </div>
@@ -39,7 +37,6 @@ function DisplayPage() {
             </Bounce>
           </div>
         </div>
-      </Slide>
     </>
   );
 }
