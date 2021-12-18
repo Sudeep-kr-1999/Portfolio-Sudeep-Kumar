@@ -7,7 +7,8 @@
   flex-wrap: wrap;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 .upper-footer {
   display: flex;
@@ -46,5 +47,5 @@
   color: black;
   font-size: 20px;
   font-weight: 600;
-  padding: 20px;
+  text-align: center;
 }
