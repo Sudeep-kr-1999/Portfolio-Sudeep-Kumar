@@ -1,101 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap");
-
 .display-page-body {
   position: relative;
-  margin-top: 60px;
-  padding: 20px;
   display: flex;
-  min-height: 100vh;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(35deg, white 32.3%, gray 32.3%);
-
-}
-.display-page {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
   min-height: 100vh;
 }
-.display-page-image {
+.display-bg {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: brightness(1);
+}
+.display-page-content {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-}
-#image-display {
-  position: relative;
-  border-style: hidden;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius:100%;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-}
-.dp-info {
-  position: relative;
-  align-self: center;
-  display: flex;
-  flex: 1;
+  padding-bottom: 2rem;
+  justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  padding: 80px;
 }
-.display-page-basic-info {
+.display-name {
   position: relative;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.dp-greeting {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  height: 50px;
-  text-align: right;
-  align-items: center;
-  color: darkred;
-}
-.dp-name {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-shadow: 0px 2px 5px gray;
-  text-decoration: solid;
-  font-size: 55px;
-  color: black;
-}
-
-.dp-specification {
-  position: relative;
-  display: flex;
+  color: white;
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
   flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 0px 2px 5px gray;
-  font-weight: 500;
-  font-size: 25px;
-  color: black;
 }
 
-.dp-contact {
+.display-specification {
   position: relative;
+  margin-top: 10px;
   display: flex;
+  color: white;
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.dp-button-links {
+.display-buttons {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
 }

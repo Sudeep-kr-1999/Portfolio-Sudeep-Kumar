@@ -41,36 +41,35 @@ function NavHamburger() {
             >
               <CloseIcon fontSize="large" onClick={closeIconClick} />
             </span>
-            <div className="navoptions-home-hamburger">
+            <div className="navoptions-home-hamburger hamburger-option">
               <h3 id="home-text">Home</h3>
             </div>
-            <div className="navoptions-about-hamburger">
+            <div className="navoptions-about-hamburger hamburger-option">
               <h3 id="about-text">About</h3>
             </div>
-            <div className="navoptions-education-details-hamburger">
+            <div className="navoptions-education-details-hamburger hamburger-option">
               <h3 id="education-details-text">Educational Details</h3>
             </div>
-            <div className="navoptions-skills-hamburger">
+            <div className="navoptions-skills-hamburger hamburger-option">
               <h3 id="skills-text">Skills</h3>
             </div>
-            <div className="navoptions-experience-hamburger">
+            <div className="navoptions-experience-hamburger hamburger-option">
               <h3 id="experience-text">Experience</h3>
             </div>
-            <div className="navoptions-projects-hamburger">
+            <div className="navoptions-projects-hamburger hamburger-option">
               <h3 id="project-text">Projects</h3>
             </div>
-            <div className="navoptions-interests-hamburger">
+            <div className="navoptions-interests-hamburger hamburger-option">
               <h3 id="interest-text">Interests</h3>
             </div>
-            <div className="navoptions-certification-hamburger">
+            <div className="navoptions-certification-hamburger hamburger-option">
               <h3 id="certification-text">Certification</h3>
             </div>
-            <div className="navoptions-contact-hamburger-hamburger">
+            <div className="navoptions-contact-hamburger-hamburger hamburger-option">
               <h3 id="contact-text">Contacts</h3>
             </div>
           </div>
         </Flip>
-
         <Flip left duration={2000}>
           <span
             className="nav-hamburger-icon"
