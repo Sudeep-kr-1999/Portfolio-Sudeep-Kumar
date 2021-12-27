@@ -1,7 +1,6 @@
 .project-component-container {
   position: relative;
   display: flex;
-  min-height: 100vh;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
@@ -17,7 +16,7 @@
   font-size: 35px;
   font-weight: 900;
   color: black;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
   justify-content: center;
 }
@@ -29,7 +28,7 @@
   padding: 20px;
   align-items: center;
   overflow-y: scroll;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .project-list::-webkit-scrollbar {
   display: none;

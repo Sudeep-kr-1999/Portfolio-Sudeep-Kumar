@@ -10,9 +10,16 @@
   transition: all 0.2s;
   transition-timing-function: ease-in-out;
 }
+
+.top-nav-left-name-container:active {
+  cursor: pointer;
+  transform: translateY(5px);
+  transition: all 0.2s;
+  transition-timing-function: ease-in-out;
+}
 #top-nav-left-name {
   position: relative;
-  font-size: 25px;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 

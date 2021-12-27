@@ -16,6 +16,13 @@
   transition: all 0.2s;
   transition-timing-function: ease-in-out;
 }
+
+.navoptions:active {
+  cursor: pointer;
+  transform: translateY(5px);
+  transition: all 0.2s;
+  transition-timing-function: ease-in-out;
+}
 @media screen and (max-width: 1600px) {
   .top-nav-navoptions {
     display: none;

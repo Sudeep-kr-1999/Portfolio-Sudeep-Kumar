@@ -1,7 +1,6 @@
 .interest-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   position: relative;
   padding-bottom: 50px;
   background: transparent;
@@ -11,9 +10,9 @@
   display: flex;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 35px;
+  margin-top: 50px;
   justify-content: center;
-  color: darkblue;
-  margin-top: 100px;
+  color:black;
 }
 .interest-parent-container {
   flex: 1;

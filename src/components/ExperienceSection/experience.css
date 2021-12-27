@@ -3,14 +3,13 @@
   position: relative;
   min-height: 100vh;
   flex-direction: column;
-  justify-content: center;
   background-color: white;
 }
 .experience-heading {
   display: flex;
   position: relative;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: 35px;
   margin-bottom: 50px;
   color: black;
@@ -26,8 +25,8 @@
   padding-left: 50px;
   background-color: transparent;
   overflow-y: scroll;
+  margin-bottom: 20px;
   scroll-behavior: smooth;
-  margin-bottom: 100px;
 }
 .experience-cards-container::-webkit-scrollbar {
   display: none;

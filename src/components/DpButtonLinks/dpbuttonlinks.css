@@ -1,32 +1,29 @@
-
-.facebook-button>.MuiSvgIcon-root{
-    position: relative;
-    color:darkblue;
-    margin-right: 20px;
+.button-icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  color: white;
+  font-size: 20px;
+  background: transparent;
+  border: none;
 }
-
-
-.twitter-button>.MuiSvgIcon-root{
-    position: relative;
-    color: blue;
-    margin-right: 20px;
-    
+.button-icon:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+  transition: all 0.1s;
+  transition-timing-function: ease-in-out;
 }
-
-.instagram-button>.MuiSvgIcon-root{
-    
-    position: relative;
-    color: blue;
-    margin-right: 20px;
+.button-icon:active {
+  cursor: progress;
+  transform: translateY(5px);
+  transition: all 0.1s;
+  transition-timing-function: ease-in-out;
 }
-
-.linkedin-button>.MuiSvgIcon-root{
-    position: relative;
-    color: darkred;
-    margin-right: 20px;
-}
-
-.github-button>.MuiSvgIcon-root{
-    position: relative;
-    color: black;
+.MuiSvgIcon-root {
+  position:relative;
+  color: white;
+  filter: drop-shadow(0px 0px 10px black);
 }
