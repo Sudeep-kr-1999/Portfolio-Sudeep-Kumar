@@ -2,8 +2,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  min-height: 100vh;
-  padding: 30px;
+  padding-top: 100px;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -12,7 +11,6 @@
   display: block;
   justify-content: center;
 }
-
 .about-pic-division > img {
   position: relative;
   background: rgba(255, 255, 255, 0.08);
@@ -44,7 +42,7 @@
   display: flex;
   margin: 10px;
   padding: 10px;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 25px;
@@ -69,10 +67,24 @@
   background-color: aqua;
   align-items: center;
   color: black;
-  box-shadow: 0px 0px 20px 2px gray;
+  box-shadow: 0px 0px 10px 2px lightslategray;
   padding-left: 30px;
   padding-right: 30px;
+  border: none;
+  font-weight: bold;
 }
+.contact-me:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.contact-me:active {
+  transform: translateY(5px);
+  transition: all 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
 .download-cv {
   position: relative;
   display: flex;
@@ -81,7 +93,19 @@
   border-radius: 20px;
   background-color: aqua;
   color: black;
-  box-shadow: 0px 0px 20px 2px gray;
+  box-shadow: 0px 0px 10px 2px lightslategrey;
   padding-left: 30px;
   padding-right: 30px;
+  border: none;
+  font-weight: bold;
+}
+.download-cv:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.download-cv:active {
+  transform: translateY(5px);
+  transition: all 0.2s;
+  transition-timing-function: ease-in-out;
 }

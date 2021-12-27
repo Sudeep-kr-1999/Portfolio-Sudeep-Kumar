@@ -4,6 +4,7 @@ import aboutPic from "./assets/profile.png";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 function About() {
+  const CVlink="https://drive.google.com/file/d/1r-ckqtm9KvZ9zIZf5-EuLfwZ4a87iVVj/view?usp=sharing";
   const aboutString=`Hello, My name is Sudeep Kumar and currently I am a third year
   undergraduate persuing Bachelor of Technology in Computer Science
   and Engineering (B.Tech CSE) from Lovely Professional University,
@@ -15,6 +16,14 @@ function About() {
   try to learn new technlogies related to development to enhance
   my skills further and I am looking forward to contribute with my
   skills the best way possible for the betterment of the society.`
+
+  const gotoContacts=(e)=>{
+    console.log("GO TO CONTACTS");
+  }
+  const saveCV=(e)=>{
+    e.preventDefault();
+    window.location.href=CVlink;
+  }
   return (
     <Zoom>
       <div className="about-landing-page">
@@ -30,8 +39,8 @@ function About() {
               {aboutString}
             </div>
             <div className="about-button">
-              <div className="contact-me">Contact Me</div>
-              <div className="download-cv">Download CV</div>
+              <button className="contact-me" onClick={gotoContacts}>Contact Me</button>
+              <button className="download-cv" onClick={saveCV}>Download CV</button>
             </div>
           </div>
         </Fade>

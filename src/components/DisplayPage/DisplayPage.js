@@ -1,43 +1,39 @@
 import React from "react";
 import "../DisplayPage/displaypage.css";
 import DpButtonLinks from "../DpButtonLinks/DpButtonLinks";
-import DpContactDetails from "../DpContactDetails/DpContactDetails";
-import profile from "./assets/profile.png";
-import Bounce from "react-reveal/Bounce";
+import background from "./assets/background10.jpg";
+import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
 function DisplayPage() {
+  const name = "Sudeep Kumar Agrawal";
+  const specification = "Student and Developer";
+  const buttonType = [
+    { name: "Github", id: 1, component: <GitHubIcon /> },
+    { name: "Linkedin", id: 2, component: <LinkedInIcon /> },
+    { name: "Facebook", id: 3, component: <FacebookRoundedIcon /> },
+    { name: "Instagram", id: 4, component: <InstagramIcon /> },
+    { name: "Twitter", id: 5, component: <TwitterIcon /> },
+  ];
   return (
-    <>
-        <div className="display-page-body">
-          <div className="display-page">
-            <div className="display-page-image">
-              <Bounce bottom duration={3000} style={{ overflow: "hidden" }}>
-                <img id="image-display" src={profile} alt="" />
-              </Bounce>
-            </div>
-            <Bounce right duration={2000} style={{ overflow: "hidden" }}>
-              <div className="dp-info">
-                <div className="display-page-basic-info">
-                  <div className="dp-greeting">Hello,</div>
-                  <div className="dp-name"> I'm Sudeep Kumar Agrawal </div>
-                  <div className="dp-specification">Student & Developer</div>
-                </div>
-                <div className="dp-contact">
-                  <DpContactDetails classname="place-icon" />
-                  <DpContactDetails classname="phone-icon" />
-                  <DpContactDetails classname="email-icon" />
-                </div>
-                <div className="dp-button-links">
-                  <DpButtonLinks classname="facebook-button" />
-                  <DpButtonLinks classname="twitter-button" />
-                  <DpButtonLinks classname="instagram-button" />
-                  <DpButtonLinks classname="linkedin-button" />
-                  <DpButtonLinks classname="github-button" />
-                </div>
-              </div>
-            </Bounce>
-          </div>
+    <div className="display-page-body">
+      <img src={background} alt="background" className="display-bg" />
+      <div className="display-page-content">
+        <div className="display-name">{name}</div>
+        <div className="display-specification">{specification}</div>
+        <div className="display-buttons">
+          {buttonType.map((buttonObj) => (
+            <DpButtonLinks
+              key={buttonObj.id}
+              buttonName={buttonObj.name}
+              component={buttonObj.component}
+            />
+          ))}
         </div>
-    </>
+      </div>
+    </div>
   );
 }
 export default DisplayPage;
