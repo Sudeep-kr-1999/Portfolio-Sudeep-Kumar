@@ -26,6 +26,7 @@
   justify-content: center;
   flex-wrap: wrap;
   padding: 20px;
+  max-height: 100vh;
   align-items: center;
   overflow-y: scroll;
   margin-bottom: 50px;
