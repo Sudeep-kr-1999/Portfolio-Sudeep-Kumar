@@ -32,6 +32,13 @@ function ProjectComponent() {
         "This project deals with the demo of billing management system used in different market places. Python GUI is used to create the interfaces of billing management system, here there is a seprate window of Login, As purchaser window where one can buy stocks for shops from the wholesellers and a As Seller Window which take the record for the sale in the shop. There is also a feature of bill formation in both the seller as well as purchaser window where one can create the bill and save it for future refrence",
       link: "https://github.com/Sudeep-kr-1999/Python-Project-on-Billing-Management-System-Using-GUI",
     },
+    {
+      projectName: "My Personal Portfolio",
+      technologyUsed: "React ",
+      description:
+        "This is my personal Portfolio which is completely build on React and NPM modules . React Reveal is also used for animation of the several components in this project.",
+      link: "https://github.com/Sudeep-kr-1999/Portfolio-Sudeep-Kumar",
+    },
   ];
   return (
     <Fade bottom duration={2000}>
