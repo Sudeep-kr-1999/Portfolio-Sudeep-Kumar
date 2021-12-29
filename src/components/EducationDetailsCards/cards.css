@@ -2,16 +2,19 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 25px;
   padding: 20px;
+  width: 30em;
+  height: 18em;
   background: rgba(255, 255, 255, 0.08);
   box-shadow: 0 4px 30px rgba(216, 203, 203, 0.9);
-  text-align: center;
   border-left: 5px solid black;
-  line-height: 6px;
 }
 .education-cards:hover {
-  transform: translateY(-10px);
+  transform: translateY(-05px);
+  background-color: lightgray;
+  border-left: 5px solid blue;
+  color: black;
   transition-duration: 0.5s;
   cursor: pointer;
 }

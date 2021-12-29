@@ -10,8 +10,8 @@
   position: relative;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-top: 50px;
-  font-size: 35px;
-  margin-bottom: 50px;
+  font-size: 30px;
+  margin-bottom: 20px;
   color: black;
   justify-content: center;
 }
@@ -25,7 +25,8 @@
   padding-left: 50px;
   background-color: transparent;
   overflow-y: scroll;
-  margin-bottom: 20px;
+  padding-bottom: 50px;
+  flex: 1;
   scroll-behavior: smooth;
 }
 .experience-cards-container::-webkit-scrollbar {

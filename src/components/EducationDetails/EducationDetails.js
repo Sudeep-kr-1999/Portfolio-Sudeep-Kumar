@@ -1,13 +1,9 @@
 import React from "react";
 import Bounce from "react-reveal/Bounce";
 import EducationDetailsCards from "../EducationDetailsCards/EducationDetailsCards";
-import secondary from "./assets/secondary.png";
-import seniorsecondary from "./assets/highersecondary.png";
-import university from "./assets/university.png";
 import "./educationDetails.css";
 function EducationDetails() {
   let secondaryEducationDetails = {
-    logo: secondary,
     educationType: "Secondary Education",
     educationSubDetail: "Basic Education",
     organisationName: "Vimla Pandey Memorial Gyan Niketan School",
@@ -16,7 +12,6 @@ function EducationDetails() {
     results: "10 CGPA",
   };
   let seniorSecondaryEducationDetails = {
-    logo: seniorsecondary,
     educationType: "Senior Secondary Education",
     educationSubDetail: "Intermediate Of Science",
     organisationName: "Chandrasekhar Dubey Inter College",
@@ -25,7 +20,6 @@ function EducationDetails() {
     results: "74 % ",
   };
   let universityEducationDetails = {
-    logo: university,
     educationType: "Gradaution",
     educationSubDetail: "B.Tech Computer Science and Engineering",
     organisationName: "Lovely Professional University",
@@ -36,13 +30,12 @@ function EducationDetails() {
   };
   return (
     <Bounce bottom duration={1500}>
-      <div className="education-details-container">
+      <div className="education-details-box">
         <Bounce>
           <div className="education-heading">EDUCATION</div>
         </Bounce>
         <div className="education-details-cards">
           <EducationDetailsCards
-            logo={secondaryEducationDetails.logo}
             educationType={secondaryEducationDetails.educationType}
             educationSubDetail={secondaryEducationDetails.educationSubDetail}
             organisationName={secondaryEducationDetails.organisationName}
@@ -51,7 +44,6 @@ function EducationDetails() {
             results={secondaryEducationDetails.results}
           />
           <EducationDetailsCards
-            logo={seniorSecondaryEducationDetails.logo}
             educationType={seniorSecondaryEducationDetails.educationType}
             educationSubDetail={
               seniorSecondaryEducationDetails.educationSubDetail
@@ -66,7 +58,6 @@ function EducationDetails() {
             results={seniorSecondaryEducationDetails.results}
           />
           <EducationDetailsCards
-            logo={universityEducationDetails.logo}
             educationType={universityEducationDetails.educationType}
             educationSubDetail={universityEducationDetails.educationSubDetail}
             organisationName={universityEducationDetails.organisationName}

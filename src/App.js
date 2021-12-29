@@ -2,14 +2,14 @@ import "./App.css";
 import DisplayPage from "./components/DisplayPage/DisplayPage";
 import Navbar from "./components/Navbar/Navbar";
 import About from "../src/components/About/About";
-import EducationDetials from "../src/components/EducationDetails/EducationDetails";
-import Skills from "./components/Skills/Skills";
 import ProjectComponent from "./components/ProjectComponent/ProjectComponent";
 import Certifications from "./components/CertificationComponent/Certifications";
 import Interest from "./components/InterestSection/Interest";
 import Experience from "./components/ExperienceSection/Experience";
 import Footer from "./components/FooterComponnent/Footer";
 import { useEffect, useState } from "react";
+import EducationDetails from "./components/EducationDetails/EducationDetails";
+import Skills from "./components/Skills/Skills";
 function App() {
   const [show, setshow] = useState(false);
   const transistionNavBar = () => {
@@ -34,8 +34,8 @@ function App() {
         </div>
         <DisplayPage />
         <About />
-        <EducationDetials />
-        <Skills />
+        <EducationDetails/>
+        <Skills/>
         <ProjectComponent />
         <Certifications />
         <Experience />
