@@ -2,33 +2,18 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 20px;
   padding: 20px;
-  height: 500px;
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
+  box-shadow: 0 4px 30px rgba(216, 203, 203, 0.9);
   text-align: center;
+  border-left: 5px solid black;
+  line-height: 6px;
 }
 .education-cards:hover {
-  transform: translateY(-30px);
+  transform: translateY(-10px);
   transition-duration: 0.5s;
   cursor: pointer;
-}
-.card-image {
-  position: relative;
-  display: block;
-  margin: 20px;
-}
-.card-image > img {
-  position: relative;
-  display: block;
-  filter: drop-shadow(0px 0px 10px blue);
-  border-radius: 100px;
 }
 .education-standard {
   position: relative;
@@ -37,16 +22,13 @@
   font-size: x-large;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 900;
-  color: darkblue;
 }
-
 .education-subheading {
   position: relative;
   display: flex;
   margin: 10px;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  color: darkred;
   font-weight: 600;
 }
 .organisation-name {
@@ -55,8 +37,6 @@
   margin: 10px;
   font-size: larger;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  color: black;
 }
 .education-organisation-address {
   position: relative;
@@ -64,24 +44,18 @@
   margin: 10px;
   font-size: larger;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  color: darkgreen;
 }
 .education-duration {
   position: relative;
   display: flex;
   margin: 10px;
   font-size: larger;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 900;
-  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .result {
   position: relative;
   display: flex;
   margin: 10px;
   font-size: larger;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 900;
-  color: darkmagenta;
+  font-family: Arial, Helvetica, sans-serif;
 }
