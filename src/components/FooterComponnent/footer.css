@@ -3,19 +3,22 @@
   min-height: 50vh;
   position: relative;
   flex-direction: column;
-  background-color: gray;
+  background-color: slategray;
   flex-wrap: wrap;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
   padding-top: 20px;
+  box-shadow: 0px 5px 20px 10px black;
 }
 .upper-footer {
   display: flex;
   position: relative;
   flex: 1;
-  justify-content: space-around;
+  justify-content:flex-start;
   flex-wrap: wrap;
+  flex: 1;
+  margin-bottom: 50px;
 }
 .address-footer {
   display: flex;
@@ -23,6 +26,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-left: 50px;
 }
 .navmenu-footer {
   display: flex;
@@ -30,13 +34,16 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 .footer-social {
   display: flex;
   position: relative;
   flex-wrap: wrap;
   justify-content: center;
+  padding-left: 100px;
   flex-direction: column;
+ flex: 1;
 }
 .lower-footer {
   display: flex;
