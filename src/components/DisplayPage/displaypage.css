@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   min-height: 100vh;
   scroll-behavior: smooth;
   box-shadow: 0px 2px 10px 5px black;
@@ -31,6 +32,7 @@
   padding-bottom: 2rem;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
   animation: animate ease-in-out 2s forwards;
   animation-delay: 3s;
 }
@@ -52,7 +54,7 @@
   font-size: 4rem;
   text-align: center;
   flex-wrap: wrap;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .display-specification {
@@ -68,6 +70,49 @@
 }
 .display-buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: relative;
+}
+
+@media screen and (max-width: 700px) {
+  .display-page-body {
+    width: fit-content;
+    padding: 50px;
+  }
+  .display-name {
+    text-align: left;
+  }
+  .display-specification {
+    justify-content: flex-start;
+  }
+  .display-buttons {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 508px) {
+  .display-name {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .display-specification {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .display-name {
+    font-size: 2.2rem;
+    text-align: left;
+  }
+  .display-specification {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  .display-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: flex-start;
+  }
 }

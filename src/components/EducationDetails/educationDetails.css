@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color:white;
+  background-color: white;
   flex: 1;
   padding: 20px;
 }
@@ -19,9 +19,10 @@
 }
 .education-details-cards {
   position: relative;
+  width: fit-content;
   display: flex;
   flex-wrap: wrap;
   padding: 50px;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }

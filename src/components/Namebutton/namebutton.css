@@ -28,5 +28,6 @@
     position: relative;
     display: block;
     margin-left: 50px;
+    padding-left: 0px;
   }
 }
