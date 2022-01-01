@@ -2,12 +2,14 @@
   display: flex;
   position: relative;
   align-items: center;
+  margin-bottom: 10px;
 }
 .footer-icon {
   display: flex;
   position: relative;
   margin-right: 20px;
   border-radius: 100%;
+  justify-content: center;
   filter: drop-shadow(0px 0px 2px blue);
 }
 .social-name {
@@ -16,4 +18,12 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: black;
+}
+@media screen and (max-width: 460px) {
+  .social-footer {
+    flex-direction: column;
+  }
+  .footer-icon {
+    margin-right: 0px;
+  }
 }

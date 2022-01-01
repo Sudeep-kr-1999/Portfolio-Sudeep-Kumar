@@ -141,3 +141,30 @@
   flex: 1;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 450px) {
+  .working-title {
+    font-size: 25px;
+  }
+  .working-organisation {
+    font-size: 20px;
+  }
+  .duration {
+    font-size: 20px;
+  }
+  .experience-description {
+    font-size: 15px;
+  }
+  .role-description {
+    font-size: 15px;
+  }
+  .learning-outcome-descripton {
+    font-size: 15px;
+  }
+  .role-heading {
+    font-size: 20px;
+  }
+  .learning-outcome-heading {
+    font-size: 20px;
+  }
+}

@@ -41,3 +41,17 @@
   outline: none;
   box-shadow: inset 0 0 1px 1px lightgrey;
 }
+
+@media screen and (max-width: 415px) {
+  .carousel-container {
+    width: 18rem;
+  }
+  .certification-container {
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 360px) {
+  .carousel-container {
+    width: 15rem;
+  }
+}

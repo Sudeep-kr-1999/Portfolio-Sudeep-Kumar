@@ -14,6 +14,7 @@
   margin-bottom: 20px;
   color: black;
   justify-content: center;
+  text-align: center;
 }
 
 .experience-cards-container {
@@ -31,4 +32,14 @@
 }
 .experience-cards-container::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (max-width:450px) {
+  .experience-container {
+  width: fit-content;
+  }
+  .experience-heading {
+  font-size: 20px;
+  }
+  
 }

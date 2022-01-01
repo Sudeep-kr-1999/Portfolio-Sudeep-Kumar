@@ -93,7 +93,7 @@ function Certifications() {
             initialActiveIndex={0}
           >
             {carouselItemsDetails.map((item, i) => (
-              <CarouselElements
+              <CarouselElements 
                 key={i}
                 heading={item.heading}
                 organisation={item.organisation}

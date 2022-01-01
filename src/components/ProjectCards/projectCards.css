@@ -37,13 +37,14 @@
 .technology-used {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   margin-top: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 20px;
   font-weight: 600;
   padding-left: 10px;
   padding-right: 10px;
+  width: fit-content;
+  height: max-content;
   color: black;
 }
 
@@ -55,7 +56,7 @@
   padding-left: 10px;
   padding-right: 10px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  text-align: justify;
+  flex-wrap: wrap;
   flex: 1;
 }
 .project-link {
@@ -73,4 +74,36 @@
   color: black;
   text-decoration: none;
   text-shadow: 0px 0px 2px darkblue;
+}
+
+@media screen and (max-width: 1220px) {
+  .projectCards {
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .project-title {
+    font-size: 30px;
+  }
+  .technology-used {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .project-title {
+    font-size: 20px;
+  }
+  .technology-used {
+    font-size: 12px;
+  }
+  .project-description {
+    font-size: 15px;
+  }
+  .project-link {
+    font-size: 15px;
+  }
 }

@@ -22,6 +22,7 @@
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 900;
+  flex-wrap: wrap;
 }
 
 .skills-point-name:hover {
@@ -36,4 +37,10 @@
   justify-content: center;
   align-items: center;
   filter: drop-shadow(0px 0px 10px lightgray);
+}
+
+@media screen and (max-width: 610px) {
+  .skills-points-container {
+    flex-direction: column;
+  }
 }

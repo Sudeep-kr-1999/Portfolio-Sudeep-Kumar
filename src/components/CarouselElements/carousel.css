@@ -16,6 +16,7 @@
   font-size: 30px;
   font-weight: 900;
   color: black;
+  text-align: center;
 }
 
 .certification-organisation {
@@ -28,6 +29,7 @@
   font-weight: 500;
   color: blue;
   text-shadow: 0px 0px 1px gray;
+  text-align: center;
 }
 
 .certificate-duration {
@@ -39,6 +41,7 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: 600;
   color: red;
+  text-align: center;
 }
 
 .certificate-img {
@@ -51,8 +54,114 @@
 }
 .certificate-img > img {
   position: relative;
-  height: 600px;
+  height: 40rem;
   display: flex;
   flex-wrap: wrap;
-  filter: drop-shadow(0px 0px 20px gray);
+  filter: drop-shadow(0px 0px 5px gray);
+}
+
+@media screen and (max-width: 1374px) {
+  .certificate-img > img {
+    height: 40rem;
+    width: 60rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .certificate-img > img {
+    height: 30rem;
+    width: 50rem;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .certificate-img > img {
+    height: 30rem;
+    width: 45rem;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .certificate-img > img {
+    height: 26rem;
+    width: 40rem;
+  }
+}
+@media screen and (max-width: 940px) {
+  .certificate-img > img {
+    height: 20rem;
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .certificate-img > img {
+    height: 20rem;
+    width: 25rem;
+  }
+  .certification-heading {
+    font-size: 25px;
+  }
+  .certificate-duration {
+    font-size: 18px;
+  }
+
+  .certification-organisation {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .certificate-img > img {
+    height: 14rem;
+    width: 20rem;
+  }
+  .certification-heading {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .certificate-img > img {
+    height: 10rem;
+    width: 15rem;
+  }
+  .certification-heading {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .certificate-img > img {
+    height: 8rem;
+    width: 12rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .certificate-img > img {
+    height: 6rem;
+    width: 8rem;
+  }
+  .certification-heading {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 416px) {
+  .certificate-img > img {
+    height: 5rem;
+    width: 6rem;
+  }
+  .certification-heading {
+    font-size: 15px;
+  }
+  .certificate-duration {
+    font-size: 13px;
+  }
+
+  .certification-organisation {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .certificate-img > img {
+    height: 4rem;
+    width: 4rem;
+  }
 }

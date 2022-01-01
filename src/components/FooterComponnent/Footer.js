@@ -65,6 +65,15 @@ function Footer() {
               phone={phone}
             />
           </div>
+          <div className="footer-social">
+            {sociallist.map((ele) => (
+              <FooterSocial
+                key={ele.id}
+                socialname={ele.socialname}
+                identifier={ele.identifier}
+              />
+            ))}
+          </div>
           <div className="navmenu-footer">
             <FooterNavigation
               navhome={navhome}
@@ -76,15 +85,6 @@ function Footer() {
               certification={certification}
               contacts={contacts}
             />
-          </div>
-          <div className="footer-social">
-            {sociallist.map((ele) => (
-              <FooterSocial
-                key={ele.id}
-                socialname={ele.socialname}
-                identifier={ele.identifier}
-              />
-            ))}
           </div>
         </div>
 

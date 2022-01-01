@@ -22,14 +22,32 @@
 }
 .project-list {
   position: relative;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: flex-start;
   flex-wrap: wrap;
+  width: fit-content;
   padding: 20px;
+  height: 100vh;
   align-items: center;
   overflow-y: scroll;
   margin-bottom: 50px;
 }
 .project-list::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (max-width: 1800px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .project-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .project-component-container {
+    width: fit-content;
+  }
 }

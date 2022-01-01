@@ -21,15 +21,40 @@
   justify-content: center;
   font-size: 30px;
   font-weight: 900;
+  text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .skill-points-container {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   padding: 5px;
   flex: 1;
   flex-wrap: wrap;
   overflow-y: scroll;
   align-items: center;
   justify-content: center;
+  max-height: 100vh;
+  align-self: center;
+}
+
+@media screen and (max-width: 1388px) {
+  .skill-points-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1070px) {
+  .skill-points-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  .skill-points-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 640px) {
+  .skills-container {
+    width: fit-content;
+  }
 }

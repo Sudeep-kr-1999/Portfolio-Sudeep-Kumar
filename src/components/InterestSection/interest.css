@@ -13,6 +13,7 @@
   margin-top: 50px;
   justify-content: center;
   color:black;
+  text-align: center;
 }
 .interest-parent-container {
   flex: 1;
@@ -30,4 +31,15 @@
   flex-direction: column;
   flex-wrap: wrap;
   flex: 1;
+}
+
+@media screen and (max-width:600px){
+  .interest-heading {
+   font-size: 25px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .interest-container{
+    width: fit-content;
+  }
 }
