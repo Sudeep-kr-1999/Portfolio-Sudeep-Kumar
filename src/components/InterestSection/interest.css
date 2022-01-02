@@ -3,7 +3,9 @@
   flex-direction: column;
   position: relative;
   padding-bottom: 50px;
-  background: transparent;
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+  background: linear-gradient(to right, #ffffff, #ece9e6);
 }
 .interest-heading {
   position: relative;
@@ -12,7 +14,7 @@
   font-size: 30px;
   margin-top: 50px;
   justify-content: center;
-  color:black;
+  color: darkblue;
   text-align: center;
 }
 .interest-parent-container {
@@ -33,13 +35,13 @@
   flex: 1;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width: 600px) {
   .interest-heading {
-   font-size: 25px;
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 460px) {
-  .interest-container{
+  .interest-container {
     width: fit-content;
   }
 }

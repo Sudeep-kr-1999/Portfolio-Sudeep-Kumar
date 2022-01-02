@@ -5,7 +5,7 @@
   justify-content: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: x-large;
-  color: black;
+  color: white;
   padding: 20px;
   font-weight: 600;
   font-size: 20px;
@@ -17,38 +17,85 @@
   position: relative;
   margin: 5px;
 }
+
+.footer-nav-interests {
+  display: flex;
+  position: relative;
+  margin: 5px;
+}
+
+.footer-nav-interests:hover {
+  cursor: pointer;
+  color: black;
+}
+.footer-nav-home:hover {
+  cursor: pointer;
+  color: black;
+}
 .footer-nav-about {
   display: flex;
   position: relative;
   margin: 5px;
+}
+
+.footer-nav-about:hover {
+  cursor: pointer;
+  color: black;
 }
 .footer-nav-education {
   display: flex;
   position: relative;
   margin: 5px;
 }
+
+.footer-nav-education:hover {
+  cursor: pointer;
+  color: black;
+}
 .footer-nav-skills {
   display: flex;
   position: relative;
   margin: 5px;
+}
+
+.footer-nav-skills:hover {
+  cursor: pointer;
+  color: black;
 }
 .footer-nav-experience {
   display: flex;
   position: relative;
   margin: 5px;
 }
+.footer-nav-experience:hover {
+  cursor: pointer;
+  color: black;
+}
 .footer-nav-projects {
   display: flex;
   position: relative;
   margin: 5px;
+}
+
+.footer-nav-projects:hover {
+  cursor: pointer;
+  color: black;
 }
 .footer-nav-certfications {
   display: flex;
   position: relative;
   margin: 5px;
 }
+.footer-nav-certfications:hover {
+  cursor: pointer;
+  color: black;
+}
 .footer-nav-contacts {
   display: flex;
   position: relative;
   margin: 5px;
+}
+.footer-nav-contacts:hover {
+  cursor: pointer;
+  color: black;
 }

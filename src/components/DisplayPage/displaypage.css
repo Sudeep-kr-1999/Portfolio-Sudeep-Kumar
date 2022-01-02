@@ -22,7 +22,7 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
-  filter: brightness(0.3) contrast(1.5) saturate(1.8);
+  filter: brightness(0.5) contrast(1.09) saturate(1.5);
   animation: animatedisplay 2s ease-in-out forwards;
 }
 .display-page-content {

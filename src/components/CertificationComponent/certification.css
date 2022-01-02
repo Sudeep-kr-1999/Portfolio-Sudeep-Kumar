@@ -3,6 +3,9 @@
   flex-direction: column;
   flex-wrap: wrap;
   display: flex;
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+  background: linear-gradient(to right, #ffffff, #ece9e6);
 }
 .certification-container-heading {
   position: relative;
@@ -28,7 +31,7 @@
 }
 
 .rec.rec-arrow {
-  border-radius: 100%;
+  background-color:transparent;
 }
 .rec.rec-arrow:hover {
   border-radius: 100%;
@@ -42,15 +45,15 @@
   box-shadow: inset 0 0 1px 1px lightgrey;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 340px) {
   .carousel-container {
-    width: 18rem;
+    width: 20rem;
   }
   .certification-container {
     width: fit-content;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 350px) {
   .carousel-container {
     width: 15rem;
   }

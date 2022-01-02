@@ -1,9 +1,13 @@
 import React from "react";
 import "../Namebutton/namebutton.css";
-function Namebutton() {
+function Namebutton({handleName}) {
+
+  const clickName=(e)=>{
+    handleName(e.target.id);
+  }
   return (
     <div className="top-nav-left-name-container">
-      <h3 id="top-nav-left-name">Sudeep Kumar</h3>
+      <h3 id="Home" onClick={clickName}>Sudeep Kumar</h3>
     </div>
   );
 }

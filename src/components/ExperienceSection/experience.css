@@ -3,7 +3,9 @@
   position: relative;
   min-height: 100vh;
   flex-direction: column;
-  background-color: white;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
 .experience-heading {
   display: flex;
@@ -12,7 +14,7 @@
   margin-top: 50px;
   font-size: 30px;
   margin-bottom: 20px;
-  color: black;
+  color: white;
   justify-content: center;
   text-align: center;
 }
@@ -34,12 +36,11 @@
   display: none;
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width: 450px) {
   .experience-container {
-  width: fit-content;
+    width: fit-content;
   }
   .experience-heading {
-  font-size: 20px;
+    font-size: 20px;
   }
-  
 }

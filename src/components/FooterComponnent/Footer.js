@@ -4,7 +4,10 @@ import ContactFooter from "../ContactFooter/ContactFooter";
 import FooterNavigation from "../FooterNavigation/FooterNavigation";
 import FooterSocial from "../FooterSocial/FooterSocial";
 import Bounce from "react-reveal/Bounce";
-function Footer() {
+function Footer({ handleclick }) {
+  const gethandleName = (handleName) => {
+    handleclick(handleName);
+  };
   const name = "Sudeep Kumar";
   const address =
     "Near Oxford Public School, Agrawal Colony , Hamidganj, Daltonganj";
@@ -18,12 +21,13 @@ function Footer() {
   const experience = "Experience";
   const projects = "Projects";
   const certification = "Certification";
+  const interests = "Interest";
   const contacts = "Contacts";
   const sociallist = [
     {
       id: 1,
-      identifier: "Gmail",
-      socialname: "sudeepagrawal1999@gmail.com",
+      identifier: "Linkedin",
+      socialname: "Linkedin",
     },
     {
       id: 2,
@@ -42,13 +46,13 @@ function Footer() {
     },
     {
       id: 5,
-      identifier: "Linkedin",
-      socialname: "Linkedin",
+      identifier: "Github",
+      socialname: "Github",
     },
     {
       id: 6,
-      identifier: "Github",
-      socialname: "Github",
+      identifier: "Gmail",
+      socialname: "sudeepagrawal1999@gmail.com",
     },
   ];
 
@@ -65,15 +69,6 @@ function Footer() {
               phone={phone}
             />
           </div>
-          <div className="footer-social">
-            {sociallist.map((ele) => (
-              <FooterSocial
-                key={ele.id}
-                socialname={ele.socialname}
-                identifier={ele.identifier}
-              />
-            ))}
-          </div>
           <div className="navmenu-footer">
             <FooterNavigation
               navhome={navhome}
@@ -84,12 +79,23 @@ function Footer() {
               projects={projects}
               certification={certification}
               contacts={contacts}
+              interests={interests}
+              handle={gethandleName}
             />
+          </div>
+          <div className="footer-social">
+            {sociallist.map((ele) => (
+              <FooterSocial
+                key={ele.id}
+                socialname={ele.socialname}
+                identifier={ele.identifier}
+              />
+            ))}
           </div>
         </div>
 
         <div className="lower-footer">
-          © Sudeep Kumar | All Right Reserved | 2021
+          © Sudeep Kumar | All Rights Reserved | 2021
         </div>
       </div>
     </Bounce>

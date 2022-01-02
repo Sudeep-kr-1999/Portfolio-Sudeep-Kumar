@@ -5,6 +5,10 @@
   padding: 20px;
   background-size: cover;
   flex-direction: column;
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+  padding-bottom: 20px;
 }
 
 .skills-details-container {
@@ -18,10 +22,12 @@
   position: relative;
   display: flex;
   padding: 10px;
+  margin-bottom: 20px;
   justify-content: center;
   font-size: 30px;
   font-weight: 900;
   text-align: center;
+  color: darkred;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .skill-points-container {
@@ -36,6 +42,9 @@
   justify-content: center;
   max-height: 100vh;
   align-self: center;
+  box-shadow: 0 0px 20px darkslategrey;
+  background-color: white;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 1388px) {
@@ -53,7 +62,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 520px) {
   .skills-container {
     width: fit-content;
   }

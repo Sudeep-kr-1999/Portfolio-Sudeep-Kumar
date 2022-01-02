@@ -26,7 +26,7 @@
 }
 
 .skills-point-name:hover {
-  color: darkcyan;
+  color: darkblue;
 }
 .skills-image-container {
   position: relative;
@@ -42,5 +42,8 @@
 @media screen and (max-width: 610px) {
   .skills-points-container {
     flex-direction: column;
+  }
+  .skills-point-name {
+    margin-left: 0px;
   }
 }

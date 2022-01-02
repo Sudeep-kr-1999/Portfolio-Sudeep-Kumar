@@ -5,7 +5,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
 .project-container-heading {
   position: relative;
@@ -15,9 +17,9 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 30px;
   font-weight: 900;
-  color: black;
+  color: white;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   justify-content: center;
 }
 .project-list {
@@ -49,5 +51,22 @@
   }
   .project-component-container {
     width: fit-content;
+  }
+}
+@media screen and (max-width: 450px) {
+  .project-component-container {
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .project-component-container {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .project-component-container {
+    padding-right: 10px;
   }
 }

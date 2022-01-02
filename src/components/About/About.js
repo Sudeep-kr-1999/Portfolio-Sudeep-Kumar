@@ -3,7 +3,7 @@ import "./about.css";
 import aboutPic from "./assets/profile.png";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
-function About() {
+function About({contactfun}) {
   const CVlink="https://drive.google.com/file/d/1r-ckqtm9KvZ9zIZf5-EuLfwZ4a87iVVj/view?usp=sharing";
   const aboutString=`Hello, My name is Sudeep Kumar and currently I am a third year
   undergraduate persuing Bachelor of Technology in Computer Science
@@ -18,7 +18,7 @@ function About() {
   skills the best way possible for the betterment of the society.`
 
   const gotoContacts=(e)=>{
-    console.log("GO TO CONTACTS");
+    contactfun(e.target.id);
   }
   const saveCV=(e)=>{
     e.preventDefault();
@@ -39,7 +39,7 @@ function About() {
               {aboutString}
             </div>
             <div className="about-button">
-              <button className="contact-me" onClick={gotoContacts}>Contact Me</button>
+              <button className="contact-me" id="Contacts" onClick={gotoContacts}>Hire Me</button>
               <button className="download-cv" onClick={saveCV}>Download CV</button>
             </div>
           </div>

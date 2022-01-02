@@ -1,7 +1,7 @@
 import React from "react";
 import "../DisplayPage/displaypage.css";
 import DpButtonLinks from "../DpButtonLinks/DpButtonLinks";
-import background from "./assets/background15.jpg";
+import background from "./assets/background10.jpg";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -18,7 +18,7 @@ function DisplayPage() {
     { name: "Twitter", id: 5, component: <TwitterIcon /> },
   ];
   return (
-    <div className="display-page-body">
+    <div className="display-page-body" >
       <img src={background} alt="background" className="display-bg" />
       <div className="display-page-content">
         <div className="display-name">{name}</div>

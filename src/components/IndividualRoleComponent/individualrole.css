@@ -2,10 +2,8 @@
     display: flex;
     position: relative;
     padding: 10px;
-    justify-content: center;
 }
 .role-text{
     display: flex;
     position: relative;
-    text-align: center;
 }

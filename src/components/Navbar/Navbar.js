@@ -3,12 +3,15 @@ import Namebutton from "../Namebutton/Namebutton";
 import NavigationMenu from "../NavigationMenu/NavigationMenu";
 import "../Navbar/nav.css";
 import NavHamburger from "../Navhamburger/NavHamburger";
-function Navbar() {
+function Navbar({ handleClickfun }) {
+  const gethandleName=(handleName)=>{
+    handleClickfun(handleName);
+  }
   return (
     <div className="navbar-top">
-      <Namebutton />
-      <NavigationMenu />
-      <NavHamburger />
+      <Namebutton handleName={gethandleName} />
+      <NavigationMenu handleName={gethandleName} />
+      <NavHamburger handleName={gethandleName}/>
     </div>
   );
 }

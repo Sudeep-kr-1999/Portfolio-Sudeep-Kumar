@@ -7,15 +7,14 @@
   flex: 1;
   width: 30em;
   height: 20em;
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 4px 30px rgba(216, 203, 203, 0.9);
-  border-left: 5px solid black;
+  background-color: white;
+  box-shadow: 0 0px 20px darkslategrey;
+  border-radius: 20px;
 }
 .education-cards:hover {
-  transform: translateY(-05px);
-  background-color: lightgray;
-  border-left: 5px solid blue;
+  transform:scale(1.02,1.02);
   color: black;
+  background-color: lightyellow;
   transition-duration: 0.5s;
   cursor: pointer;
 }
@@ -26,42 +25,45 @@
   font-size: x-large;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 900;
+  color: darkblue;
 }
 .education-subheading {
   position: relative;
   display: flex;
   margin: 10px;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
+  color: darkgreen;
 }
 .organisation-name {
   position: relative;
   display: flex;
   margin: 10px;
   font-size: larger;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .education-organisation-address {
   position: relative;
   display: flex;
   margin: 10px;
   font-size: larger;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .education-duration {
   position: relative;
   display: flex;
   margin: 10px;
   font-size: larger;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .result {
   position: relative;
   display: flex;
   margin: 10px;
   font-size: larger;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: darkgreen;
 }
 @media screen and (max-width: 1326px) {
   .education-cards {
