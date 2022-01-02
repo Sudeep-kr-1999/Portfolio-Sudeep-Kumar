@@ -27,30 +27,39 @@ function NavHamburger({ handleName }) {
 
   const clickHome = (e) => {
     handleName(e.target.id);
+    closeIconClick();
   };
   const clickAbout = (e) => {
     handleName(e.target.id);
+    closeIconClick();
   };
   const clickEducation = (e) => {
     handleName(e.target.id);
+    closeIconClick();
   };
   const clickSkills = (e) => {
     handleName(e.target.id);
+    closeIconClick();
   };
   const clickExperience = (e) => {
     handleName(e.target.id);
+    closeIconClick();
   };
   const clickProjects = (e) => {
     handleName(e.target.id);
+    closeIconClick();
   };
   const clickInterest = (e) => {
     handleName(e.target.id);
+    closeIconClick();
   };
   const clickCertification = (e) => {
     handleName(e.target.id);
+    closeIconClick();
   };
   const clickContacts = (e) => {
     handleName(e.target.id);
+    closeIconClick();
   };
   return (
     <>
