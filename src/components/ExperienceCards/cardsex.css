@@ -3,17 +3,14 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin: 20px;
   padding: 20px;
   width: fit-content;
-  background: white;
-  box-shadow: 0 4px 20px black;
-  filter: brightness(95%);
+  filter: brightness(100%);
   border-radius: 20px;
 }
 
-.experience-cards:hover{
-  background-color: lightyellow;
+.experience-cards:hover {
   cursor: pointer;
   transition-duration: 0.5s;
 }
@@ -33,50 +30,48 @@
 .working-title {
   display: flex;
   position: relative;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 25px;
   align-items: center;
   flex-wrap: wrap;
-  color: darkblue;
+  color: white;
 }
 .working-organisation {
   display: flex;
   position: relative;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
   font-size: 25px;
   padding: 10px;
   align-items: center;
   color: black;
   flex-wrap: wrap;
-  color: darkgreen;
+  color: lightcyan;
 }
 .duration {
   display: flex;
   position: relative;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
   font-size: 25px;
   align-items: center;
   color: black;
   padding: 10px;
   flex-wrap: wrap;
-  color: darkgreen;
+  color: lightcyan;
 }
 .experience-description {
   display: flex;
   position: relative;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   flex-direction: column;
+  font-size: 18px;
   padding: 10px;
   padding-left: 20px;
-  font-weight: 500;
   flex-wrap: wrap;
+  color: thistle;
 }
 .role-in-experience {
   display: flex;
@@ -88,23 +83,23 @@
 .role-heading {
   display: flex;
   position: relative;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 25px;
   padding: 10px;
-  color: darkred;
-  text-align: center;
+  margin-top: 30px;
+  color: white;
+  text-align: left;
   flex-direction: column;
   flex-wrap: wrap;
 }
 .role-description {
   display: flex;
   position: relative;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   flex-direction: column;
   flex: 1;
   flex-wrap: wrap;
+  color: thistle;
 }
 
 .learning-outcomes {
@@ -117,24 +112,22 @@
 .learning-outcome-heading {
   display: flex;
   position: relative;
-  align-items: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 25px;
   padding: 10px;
-  color: darkred;
+  color: white;
   flex-direction: column;
   flex-wrap: wrap;
-  text-align: center;
+  margin-top: 30px;
 }
 
 .learning-outcome-descripton {
   display: flex;
   position: relative;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   flex-direction: column;
   flex: 1;
+  color: thistle;
   flex-wrap: wrap;
 }
 

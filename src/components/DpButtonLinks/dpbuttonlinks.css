@@ -5,18 +5,17 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  color: white;
-  font-size: 20px;
+  font-size: larger;
+  color: black;
+  font-weight: 500;
   background: transparent;
   border: none;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .button-icon:hover {
   cursor: pointer;
   transform: scale(1.1, 1.1);
   transition: all 0.1s;
-  color: teal;
-  text-shadow: 0px 0px 20px black;
   transition-timing-function: ease-in-out;
 }
 .button-icon:active {
@@ -27,8 +26,7 @@
 }
 .button-icon > .MuiSvgIcon-root {
   position: relative;
-  color: white;
-  filter: drop-shadow(0px 0px 10px black);
+  color: darkblue;
 }
 
 @media screen and (max-width: 510px) {

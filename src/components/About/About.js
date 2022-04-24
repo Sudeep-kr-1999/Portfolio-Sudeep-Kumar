@@ -4,7 +4,7 @@ import aboutPic from "./assets/profile.png";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 function About({contactfun}) {
-  const CVlink="https://drive.google.com/file/d/1r-ckqtm9KvZ9zIZf5-EuLfwZ4a87iVVj/view?usp=sharing";
+  const CVlink="https://drive.google.com/file/d/1ABDxm1W6sZovGb0PhJYuqm8GZ7IMZ36V/view?usp=sharing";
   const aboutString=`Hello, My name is Sudeep Kumar and currently I am a third year
   undergraduate persuing Bachelor of Technology in Computer Science
   and Engineering (B.Tech CSE) from Lovely Professional University,

@@ -26,11 +26,11 @@
 
 .footer-nav-interests:hover {
   cursor: pointer;
-  color: black;
+  color: thistle;
 }
 .footer-nav-home:hover {
   cursor: pointer;
-  color: black;
+  color: thistle;
 }
 .footer-nav-about {
   display: flex;
@@ -40,7 +40,7 @@
 
 .footer-nav-about:hover {
   cursor: pointer;
-  color: black;
+  color: thistle;
 }
 .footer-nav-education {
   display: flex;
@@ -50,7 +50,7 @@
 
 .footer-nav-education:hover {
   cursor: pointer;
-  color: black;
+  color: thistle;
 }
 .footer-nav-skills {
   display: flex;
@@ -60,7 +60,7 @@
 
 .footer-nav-skills:hover {
   cursor: pointer;
-  color: black;
+  color: thistle;
 }
 .footer-nav-experience {
   display: flex;
@@ -69,7 +69,7 @@
 }
 .footer-nav-experience:hover {
   cursor: pointer;
-  color: black;
+  color: thistle;
 }
 .footer-nav-projects {
   display: flex;
@@ -79,7 +79,7 @@
 
 .footer-nav-projects:hover {
   cursor: pointer;
-  color: black;
+  color: thistle;
 }
 .footer-nav-certfications {
   display: flex;
@@ -88,7 +88,7 @@
 }
 .footer-nav-certfications:hover {
   cursor: pointer;
-  color: black;
+  color: thistle;
 }
 .footer-nav-contacts {
   display: flex;
@@ -97,5 +97,5 @@
 }
 .footer-nav-contacts:hover {
   cursor: pointer;
-  color: black;
+  color: thistle;
 }

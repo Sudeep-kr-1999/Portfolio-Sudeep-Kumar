@@ -6,7 +6,8 @@
   flex-wrap: wrap;
   min-height: 100vh;
   scroll-behavior: smooth;
-  box-shadow: 0px 2px 10px 5px black;
+  background-color: #f4f4f4;
+  margin: 60px;
 }
 
 @keyframes animatedisplay {
@@ -22,8 +23,8 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
-  filter: brightness(0.5) contrast(1.09) saturate(1.5);
-  animation: animatedisplay 2s ease-in-out forwards;
+  filter: brightness(0.95) contrast(1.05) saturate(2) opacity(0.7);
+  animation: animatedisplay 1s ease-in-out forwards;
 }
 .display-page-content {
   position: relative;
@@ -33,7 +34,7 @@
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  animation: animate ease-in-out 2s forwards;
+  animation: animate ease-in-out 1s forwards;
   animation-delay: 3s;
 }
 @keyframes animate {
@@ -49,21 +50,21 @@
 .display-name {
   position: relative;
   display: flex;
-  color: white;
-  font-weight: 600;
-  font-size: 4rem;
+  color: black;
+  font-weight: 500;
+  font-size: 3rem;
   text-align: center;
   flex-wrap: wrap;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .display-specification {
   position: relative;
   margin-top: 10px;
   display: flex;
-  color: white;
+  color: black;
   font-size: 2em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
@@ -77,7 +78,7 @@
 @media screen and (max-width: 700px) {
   .display-page-body {
     width: fit-content;
-    padding: 50px;
+    padding: 30px;
   }
   .display-name {
     text-align: left;
@@ -90,7 +91,7 @@
   }
 }
 
-@media screen and (max-width: 508px) {
+@media screen and (max-width: 580px) {
   .display-name {
     font-size: 2.5rem;
     text-align: left;
@@ -98,6 +99,11 @@
   .display-specification {
     text-align: left;
     font-size: 1.5rem;
+  }
+  .display-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: flex-start;
   }
 }
 

@@ -26,7 +26,7 @@ function EducationDetails() {
     organisationAddress:
       "Delhi G.T Road , Phagwara, Jalandhar, Punjab - 144411",
     educationDuration: "2019-Going On",
-    results: "8.61 CGPA",
+    results: "8.69 CGPA",
   };
   return (
     <Bounce bottom duration={1500}>

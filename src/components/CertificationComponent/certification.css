@@ -3,9 +3,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   display: flex;
-  background: #ece9e6;
-  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
-  background: linear-gradient(to right, #ffffff, #ece9e6);
+  background-color: #f4f4f4;
+  margin: 60px;
 }
 .certification-container-heading {
   position: relative;
@@ -31,7 +30,7 @@
 }
 
 .rec.rec-arrow {
-  background-color:transparent;
+  background-color: transparent;
 }
 .rec.rec-arrow:hover {
   border-radius: 100%;

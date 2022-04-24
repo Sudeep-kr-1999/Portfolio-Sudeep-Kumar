@@ -20,7 +20,7 @@
 }
 
 .social-name:hover {
-  color: black;
+  color: thistle;
   cursor: pointer;
 }
 @media screen and (max-width: 720px) {

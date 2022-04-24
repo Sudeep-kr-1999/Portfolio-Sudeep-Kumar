@@ -3,20 +3,18 @@
   position: relative;
   display: flex;
   flex: 1;
-  justify-content: space-evenly;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  justify-content:flex-end;
   background: transparent;
 }
 .navoptions {
   display: block;
+  margin: 0px 20px;
 }
 .navoptions:hover {
   cursor: pointer;
-  text-decoration: solid;
-  color:teal;
-  transform: scale(1.05, 1.05);
-  transition: all 0.2s;
-  transition-timing-function: ease-in-out;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .navoptions:active {

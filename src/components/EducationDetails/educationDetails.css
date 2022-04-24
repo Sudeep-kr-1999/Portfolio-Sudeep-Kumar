@@ -4,10 +4,10 @@
   flex-direction: column;
   flex-wrap: wrap;
   flex: 1;
-  background: #ece9e6;
-  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
-  background: linear-gradient(to right, #ffffff, #ece9e6);
+  background-color: #2a3746;
+  filter: brightness(1) opacity(1) saturate(1.5);
   padding: 10px;
+  margin: 60px;
 }
 .education-heading {
   position: relative;
@@ -18,8 +18,8 @@
   font-size: 30px;
   font-weight: 600;
   text-decoration: wavy;
-  color: darkred;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .education-details-cards {
   position: relative;

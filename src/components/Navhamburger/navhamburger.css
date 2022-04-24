@@ -40,7 +40,7 @@
   }
   .hamburger-option {
     font-size: 1.4rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -50,7 +50,5 @@
     transform: translateY(5px);
     transition: all 0.2s;
     transition-timing-function: ease-in-out;
-    color: darkblue;
-    background-color: gainsboro;
   }
 }

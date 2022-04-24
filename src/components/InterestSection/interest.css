@@ -3,10 +3,10 @@
   flex-direction: column;
   position: relative;
   padding-bottom: 50px;
-  background: #ece9e6;
-  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
-  background: linear-gradient(to right, #ffffff, #ece9e6);
+  margin: 60px;
+  background-color: #f4f4f4;
 }
+
 .interest-heading {
   position: relative;
   display: flex;

@@ -4,15 +4,12 @@
   display: block;
   padding-left: 50px;
   position: relative;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .top-nav-left-name-container:hover {
   cursor: pointer;
-  color: teal;
-  transform: scale(1.05, 1.05);
-  transition: all 0.2s;
-  transition-timing-function: ease-in-out;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .top-nav-left-name-container:active {

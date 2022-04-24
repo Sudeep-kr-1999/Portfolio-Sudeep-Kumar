@@ -7,9 +7,8 @@
   justify-content: space-evenly;
   align-items: center;
   padding-bottom: 50px;
-  background: #0f2027;
-  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background-color: #f4f4f4;
+  margin: 60px;
 }
 .about-pic-division {
   position: relative;
@@ -17,13 +16,11 @@
   justify-content: center;
 }
 .about-pic-division > img {
+  height: 25rem;
+  width: 25rem;
   position: relative;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  filter: brightness(1.2) contrast(1.02);
 }
 .about-details-section {
   position: relative;
@@ -40,9 +37,9 @@
   display: flex;
   margin: 10px;
   margin-left: 0px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 40px;
-  color:white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  color: black;
 }
 .about-text {
   position: relative;
@@ -50,8 +47,9 @@
   margin: 10px;
   margin-left: 0px;
   font-family: "Times New Roman", Times, serif;
+  line-height: 30px;
   font-size: 20px;
-  color:whitesmoke;
+  color: darkslategrey;
   font-weight: 500;
 }
 
@@ -77,7 +75,6 @@
   padding-right: 30px;
   border: none;
   font-weight: bold;
-  border-radius: 20px;
 }
 .contact-me:hover {
   transform: scale(1.1, 1.1);
@@ -104,7 +101,6 @@
   padding-right: 30px;
   border: none;
   font-weight: bold;
-  border-radius: 20px;
 }
 .download-cv:hover {
   transform: scale(1.1, 1.1);

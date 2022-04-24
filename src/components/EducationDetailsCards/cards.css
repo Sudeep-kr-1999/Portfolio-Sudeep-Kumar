@@ -2,19 +2,15 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   margin: 25px;
   padding: 20px;
   flex: 1;
   width: 30em;
   height: 20em;
-  background-color: white;
-  box-shadow: 0 0px 20px darkslategrey;
-  border-radius: 20px;
 }
 .education-cards:hover {
   transform:scale(1.02,1.02);
-  color: black;
-  background-color: lightyellow;
   transition-duration: 0.5s;
   cursor: pointer;
 }
@@ -25,7 +21,7 @@
   font-size: x-large;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 900;
-  color: darkblue;
+  color: whitesmoke;
 }
 .education-subheading {
   position: relative;
@@ -34,13 +30,14 @@
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
-  color: darkgreen;
+  color:thistle;
 }
 .organisation-name {
   position: relative;
   display: flex;
   margin: 10px;
   font-size: larger;
+  color: thistle;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .education-organisation-address {
@@ -48,13 +45,15 @@
   display: flex;
   margin: 10px;
   font-size: larger;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: thistle;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .education-duration {
   position: relative;
   display: flex;
   margin: 10px;
   font-size: larger;
+  color: thistle;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .result {
@@ -63,7 +62,7 @@
   margin: 10px;
   font-size: larger;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: darkgreen;
+  color: white;
 }
 @media screen and (max-width: 1326px) {
   .education-cards {

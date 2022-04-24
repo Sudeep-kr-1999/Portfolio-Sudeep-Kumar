@@ -7,7 +7,6 @@
   flex-wrap: wrap;
   padding-left: 10px;
   padding-right: 10px;
-  box-shadow: 0px 5px 20px 10px black;
 }
 .upper-footer {
   display: flex;
@@ -77,6 +76,8 @@
 @media screen and (max-width: 720px) {
   .upper-footer {
     display: flex;
+    width: fit-content;
     flex-direction: column;
+    padding: 50px;
   }
 }

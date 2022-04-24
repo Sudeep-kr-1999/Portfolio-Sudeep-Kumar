@@ -1,7 +1,7 @@
 import React from "react";
 import "../DisplayPage/displaypage.css";
 import DpButtonLinks from "../DpButtonLinks/DpButtonLinks";
-import background from "./assets/background10.jpg";
+import background from "./assets/background2.jpg";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
