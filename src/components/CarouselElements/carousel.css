@@ -109,17 +109,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
-  .certificate-img > img {
-    height: 14rem;
-    width: 20rem;
-  }
-  .certification-heading {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 780px) {
   .certificate-img > img {
     height: 10rem;
     width: 15rem;
@@ -128,18 +118,35 @@
     font-size: 20px;
   }
 }
-@media screen and (max-width: 530px) {
+
+@media screen and (max-width: 750px) {
+  .certificate-img > img {
+    height: 8rem;
+    width: 12rem;
+  }
+  .certification-heading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 690px) {
   .certificate-img > img {
     height: 8rem;
     width: 12rem;
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 560px) {
   .certificate-img > img {
-    height: 6rem;
-    width: 8rem;
+    height: 5rem;
+    width: 6rem;
   }
   .certification-heading {
+    font-size: 15px;
+  }
+  .certificate-duration {
+    font-size: 13px;
+  }
+
+  .certification-organisation {
     font-size: 15px;
   }
 }
