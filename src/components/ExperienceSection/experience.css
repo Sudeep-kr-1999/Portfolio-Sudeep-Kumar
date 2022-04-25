@@ -5,7 +5,7 @@
   flex-direction: column;
   background-color: #2a3746;
   filter: brightness(1) opacity(1) saturate(1.5);
-  margin: 60px;
+  margin:10px;
 }
 .experience-heading {
   display: flex;
