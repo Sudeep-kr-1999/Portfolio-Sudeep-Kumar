@@ -24,8 +24,6 @@
   position: relative;
   flex-direction: column;
   max-height: 100vh;
-  padding-right: 50px;
-  padding-left: 50px;
   background-color: transparent;
   overflow-y: scroll;
   padding-bottom: 50px;
@@ -36,11 +34,15 @@
   display: none;
 }
 
-@media screen and (max-width: 450px) {
-  .experience-container {
-    width: fit-content;
-  }
+@media screen and (max-width: 500px) {
   .experience-heading {
     font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .experience-heading {
+    font-size: 15px;
   }
 }

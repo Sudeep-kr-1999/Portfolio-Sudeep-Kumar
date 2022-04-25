@@ -5,7 +5,6 @@
   z-index: 10;
   height: 50px;
   background: white; 
-  padding: 0px 60px;
 }
 
 @media screen and (max-width: 1600px) {

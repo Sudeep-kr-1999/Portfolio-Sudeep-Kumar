@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   flex: 1;
-  padding: 20px;
   background-size: cover;
   flex-direction: column;
   padding-bottom: 20px;
@@ -20,7 +19,6 @@
 .skills-heading {
   position: relative;
   display: flex;
-  padding: 10px;
   margin-bottom: 20px;
   justify-content: center;
   font-size: 30px;
@@ -32,7 +30,6 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 5px;
   flex: 1;
   flex-wrap: wrap;
   overflow-y: scroll;

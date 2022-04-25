@@ -18,7 +18,7 @@ function ExperienceCards(props) {
         <div className="experience-description">{props.description}</div>
         <div className="roles-learning-container">
           <div className="role-in-experience">
-            <div className="role-heading">ROLES</div>
+            <div className="role-heading">Roles</div>
             <div className="role-description">
               {rolesList.map((ele) => (
                 <IndividualRole role={ele} />
@@ -26,7 +26,7 @@ function ExperienceCards(props) {
             </div>
           </div>
           <div className="learning-outcomes">
-            <div className="learning-outcome-heading">LEARNING OUTCOMES</div>
+            <div className="learning-outcome-heading">Learning Outcomes</div>
             <div className="learning-outcome-descripton">
               {learningOutcomeList.map((ele) => (
                 <IndividualLearningOutcome learningOutcome={ele} />

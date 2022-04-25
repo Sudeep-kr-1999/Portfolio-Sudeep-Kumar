@@ -1,7 +1,6 @@
 .project-component-container {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -13,7 +12,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  flex: 1;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 30px;
   font-weight: 900;
@@ -27,9 +25,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: flex-start;
-  flex-wrap: wrap;
-  width: fit-content;
-  padding: 20px;
   align-items: center;
   margin-bottom: 50px;
 }
@@ -51,20 +46,9 @@
     width: fit-content;
   }
 }
-@media screen and (max-width: 450px) {
-  .project-component-container {
-    padding-right: 25px;
-  }
-}
 
-@media screen and (max-width: 420px) {
-  .project-component-container {
-    padding-right: 50px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .project-component-container {
-    padding-right: 10px;
+@media screen and (max-width: 410px) {
+  .project-container-heading {
+    font-size: 20px;
   }
 }

@@ -2,10 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  padding: 20px;
   margin: 20px;
-  width: 500px;
+  padding: 10px;
   filter: brightness(95%);
 }
 
@@ -87,15 +85,15 @@
 }
 @media screen and (max-width: 480px) {
   .project-title {
-    font-size: 20px;
+    font-size: 15px;
   }
   .technology-used {
-    font-size: 12px;
+    font-size: 10px;
   }
   .project-description {
-    font-size: 15px;
+    font-size: 10px;
   }
   .project-link {
-    font-size: 15px;
+    font-size: 10px;
   }
 }
