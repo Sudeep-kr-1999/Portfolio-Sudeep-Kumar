@@ -27,7 +27,7 @@ function SkillsPoints(props) {
     imgJSX = <img src={java} alt="java" />;
   } else if (skillname === "FrontEnd Development (HTML,CSS,Javascript)") {
     imgJSX = <img src={html} alt="frontend" />;
-  } else if (skillname === "Bankend Development (NodeJS,Express)") {
+  } else if (skillname === "Backend Development (NodeJS,Express)") {
     imgJSX = <img src={node} alt="backend" />;
   } else if (skillname === "MongoDB") {
     imgJSX = <img src={mongo} alt="mongodb" />;

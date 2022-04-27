@@ -15,7 +15,7 @@ function Skills() {
     },
     {
       id: 6,
-      skillname: "Bankend Development (NodeJS,Express)",
+      skillname: "Backend Development (NodeJS,Express)",
       value: 7,
     },
     { id: 7, skillname: "MongoDB", value: 6 },
