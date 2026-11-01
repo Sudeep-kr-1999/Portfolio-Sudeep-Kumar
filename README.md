@@ -24,31 +24,37 @@ yarn build
 
 The static site is written to `dist/`. Webpack includes the resume as a fingerprinted asset, so its link works under the project Pages URL as well as a custom domain.
 
-## Update your resume
+### Automatic deployment
 
-Replace `public/Sudeep-Kumar-Resume.pdf` with your new PDF, keeping the same filename, then publish with `yarn deploy` (see below). The build automatically includes the latest file, so no code changes are needed. The live site updates after GitHub Pages finishes deploying.
+The repository includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml`. Every push to the `master` branch automatically:
 
-To publish from the existing `gh-pages` branch, run:
+1. Installs dependencies using the committed Yarn lockfile.
+2. Runs the TypeScript type-check.
+3. Builds the portfolio into `dist/`.
+4. Deploys the build to GitHub Pages.
 
-```bash
-yarn deploy
-```
+**One-time GitHub Pages setup:** Open this repository's **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. The workflow can then deploy automatically on every subsequent push to `master`. You can also start it manually from the repository's **Actions** tab using **Deploy portfolio to GitHub Pages**.
 
-This builds the site and publishes `dist/` to the `gh-pages` branch. The repository's GitHub remote must be configured.
+Live site: https://sudeep-kr-1999.github.io/Portfolio-Sudeep-Kumar/
+
+### Update your resume
+
+Replace `public/Sudeep-Kumar-Resume.pdf` with your new PDF, keeping the same filename, and commit the change to `master`. The automatic workflow rebuilds and publishes the latest file.
 
 ## Project layout
 
 ```text
 Portfolio-Sudeep-Kumar/
-├── public/                    # HTML shell, favicon, resume PDF
+├── .github/workflows/          # Automatic GitHub Pages deployment
+├── public/                     # HTML shell, favicon, resume PDF
 ├── src/
-│   ├── app/                   # Redux store and UI state
-│   ├── components/            # Header, hero and all portfolio sections
-│   ├── data/                  # Profile, skills, education and content
-│   ├── styles/                # Responsive light/dark design system
-│   ├── App.tsx                # Full portfolio page
-│   └── index.tsx              # Application entry point
-├── types/                     # Asset type declarations
+│   ├── app/                    # Redux store and UI state
+│   ├── components/             # Header, hero and all portfolio sections
+│   ├── data/                   # Profile, skills, education and content
+│   ├── styles/                 # Responsive light/dark design system
+│   ├── App.tsx                 # Full portfolio page
+│   └── index.tsx               # Application entry point
+├── types/                      # Asset type declarations
 ├── webpack.config.js
 └── package.json
 ```
