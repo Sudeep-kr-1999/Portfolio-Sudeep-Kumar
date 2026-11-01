@@ -39,7 +39,7 @@ The repository includes a GitHub Actions workflow at `.github/workflows/deploy-p
 
 ### Update your resume
 
-Replace `public/Sudeep-Kumar-Resume.pdf` with your new PDF, keeping the same filename, and commit the change to `master`. The automatic workflow rebuilds and publishes the latest file.
+Replace `public/SudeepKumar_Fullstack.pdf` with your new PDF, keeping the same filename, and commit the change to `master`. The automatic workflow rebuilds and publishes the latest file.
 
 ## Project layout
 

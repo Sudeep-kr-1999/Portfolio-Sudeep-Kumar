@@ -1,4 +1,4 @@
-import resume from "../../public/Sudeep-Kumar-Resume.pdf";
+import resume from "../../public/SudeepKumar_Fullstack.pdf";
 
 export const profile = {
   name: "Sudeep Kumar Agrawal",
