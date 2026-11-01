@@ -8,6 +8,7 @@ import {
   MoveUpRight,
 } from "lucide-react";
 import { profile } from "../data/portfolio";
+import profileImage from "../../public/Profile.jpeg";
 
 export default function Hero() {
   const scrollTo = (id: string) =>
@@ -23,17 +24,23 @@ export default function Hero() {
           <div className="availability">
             <span className="availability-dot" /> OPEN TO WORK
           </div>
-          <p className="hero-kicker">
-            {profile.role.split(" — ")[0].toUpperCase()} <span>·</span>{" "}
-            {profile.location.toUpperCase()}
-          </p>
+          <div className="hero-profile">
+            <img src={profileImage} alt={profile.name} />
+            <div className="hero-profile__copy">
+              <p className="hero-profile__eyebrow">HELLO, I’M</p>
+              <h2 className="hero-profile__name">{profile.name}</h2>
+              <p className="hero-profile__role">
+                {profile.role} <span>·</span> {profile.location}
+              </p>
+            </div>
+          </div>
           <h1>
             Thoughtful code.
             <br />
             <span>Meaningful</span> impact.
           </h1>
           <p className="hero-intro">
-            I’m {profile.name}. {profile.intro}
+            {profile.intro}
           </p>
           <div className="hero-actions">
             <button
