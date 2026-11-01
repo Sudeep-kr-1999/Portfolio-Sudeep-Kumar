@@ -1,61 +1,41 @@
 {
-  "homepage": "https://sudeep-kr-1999.github.io/Portfolio-Sudeep-Kumar",
-  "name": "portfolio",
-  "version": "0.1.0",
+  "name": "sudeep-kumar-portfolio",
+  "version": "2.0.0",
   "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.5.0",
-    "@emotion/styled": "^11.3.0",
-    "@mui/icons-material": "^5.2.1",
-    "@mui/material": "^5.0.6",
-    "@mui/styled-engine-sc": "^5.0.4",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "bootstrap": "^5.1.3",
-    "file-saver": "^2.0.5",
-    "i": "^0.3.7",
-    "npm": "^8.1.2",
-    "react": "^17.0.2",
-    "react-circular-progressbar": "^2.0.4",
-    "react-dom": "^17.0.2",
-    "react-elastic-carousel": "^0.11.5",
-    "react-particles-js": "^3.0.3",
-    "react-responsive": "^9.0.0-beta.4",
-    "react-reveal": "^1.2.2",
-    "react-scripts": "4.0.3",
-    "react-star-ratings": "^2.3.0",
-    "react-tsparticles": "^1.37.2",
-    "styled-components": "^5.3.3",
-    "web-vitals": "^1.1.2"
-  },
+  "homepage": "https://sudeep-kr-1999.github.io/Portfolio-Sudeep-Kumar",
+  "description": "Apple-inspired personal portfolio built with React, Redux Toolkit and Webpack.",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "webpack serve --config webpack.config.js --mode development",
+    "dev": "webpack serve --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production",
+    "typecheck": "tsc --noEmit",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "deploy": "npm run build && npx --yes gh-pages@3.2.3 -d dist"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
-  }
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
+    "@babel/preset-typescript": "^7.25.9",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "@types/webpack-env": "^1.18.5",
+    "@types/node": "^22.9.0"
+  },
+  "packageManager": "yarn@1.22.22"
 }
