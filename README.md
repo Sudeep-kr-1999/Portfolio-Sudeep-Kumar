@@ -2,6 +2,8 @@
 
 An Apple-inspired responsive portfolio built as one self-contained React 18 + TypeScript app. All sections, including experience and projects, are part of this repository; no separate portfolio or remote server is needed.
 
+**Live portfolio:** https://sudeep-kr-1999.github.io/Portfolio-Sudeep-Kumar/
+
 ## Run locally
 
 Requirements: Node.js 18+ and Yarn Classic 1.22.22.
@@ -13,7 +15,7 @@ yarn start
 
 You can also use `npm install` followed by `npm start`.
 
-Open http://localhost:3000. The full portfolio starts from this project folder by itself.
+To preview changes on your own computer, run the development server and open http://localhost:3000.
 
 ## Build and publish
 
@@ -34,8 +36,6 @@ The repository includes a GitHub Actions workflow at `.github/workflows/deploy-p
 4. Deploys the build to GitHub Pages.
 
 **One-time GitHub Pages setup:** Open this repository's **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. The workflow can then deploy automatically on every subsequent push to `master`. You can also start it manually from the repository's **Actions** tab using **Deploy portfolio to GitHub Pages**.
-
-Live site: https://sudeep-kr-1999.github.io/Portfolio-Sudeep-Kumar/
 
 ### Update your resume
 
