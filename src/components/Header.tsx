@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Menu, Moon, Sun, X } from "lucide-react";
+import { flushSync } from "react-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setMenuOpen, toggleTheme } from "../app/uiSlice";
 import type { AppDispatch, RootState } from "../app/store";
 import { profile } from "../data/portfolio";
+import profileImage from "../../public/Profile.jpeg";
 
 const links = [
   ["about", "About"],
@@ -13,6 +15,12 @@ const links = [
   ["education", "Education"],
   ["contact", "Contact"],
 ];
+
+type ViewTransitionDocument = Document & {
+  startViewTransition?: (callback: () => void) => {
+    finished: Promise<void>;
+  };
+};
 
 export default function Header() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -47,11 +55,131 @@ export default function Header() {
     };
   }, []);
 
+  useEffect(() => {
+    const profileImage = document.querySelector<HTMLImageElement>(
+      ".hero-profile img",
+    );
+    const brandMark = document.querySelector<HTMLButtonElement>(".brand-mark");
+    const brandImage =
+      brandMark?.querySelector<HTMLImageElement>(".brand-mark__avatar");
+    const brandText = brandMark?.querySelector<HTMLSpanElement>(":scope > span");
+
+    if (!profileImage || !brandMark || !brandImage || !brandText) {
+      return;
+    }
+
+    const flight = document.createElement("div");
+    const flightImage = profileImage.cloneNode() as HTMLImageElement;
+    flight.className = "profile-brand-flight";
+    flight.setAttribute("aria-hidden", "true");
+    flightImage.alt = "";
+    flight.append(flightImage);
+    document.body.append(flight);
+
+    let frame = 0;
+    const reset = () => {
+      profileImage.style.opacity = "";
+      brandImage.style.opacity = "";
+      brandText.style.opacity = "";
+      flight.style.display = "none";
+    };
+
+    const updateFlight = () => {
+      if (frame) return;
+      frame = window.requestAnimationFrame(() => {
+        frame = 0;
+        const source = profileImage.getBoundingClientRect();
+        const target = brandImage.getBoundingClientRect();
+        const headerBottom =
+          document.querySelector(".site-header")?.getBoundingClientRect().bottom ??
+          66;
+        const rawProgress = Math.max(
+          0,
+          Math.min(
+            1,
+            (headerBottom - source.top) / Math.max(source.height + 60, 1),
+          ),
+        );
+        const linearProgress = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches
+          ? Number(rawProgress >= 0.5)
+          : rawProgress;
+        const progress =
+          linearProgress * linearProgress * (3 - 2 * linearProgress);
+
+        if (progress === 0) {
+          reset();
+          return;
+        }
+
+        const mix = (from: number, to: number) =>
+          from + (to - from) * progress;
+        brandText.style.opacity = `${1 - progress}`;
+        brandImage.style.opacity = `${progress}`;
+        profileImage.style.opacity = "0";
+
+        if (progress === 1) {
+          flight.style.display = "none";
+          return;
+        }
+
+        flight.style.display = "block";
+        flight.style.left = `${mix(source.left, target.left)}px`;
+        flight.style.top = `${mix(source.top, target.top)}px`;
+        flight.style.width = `${mix(source.width, target.width)}px`;
+        flight.style.height = `${mix(source.height, target.height)}px`;
+      });
+    };
+
+    updateFlight();
+    window.addEventListener("scroll", updateFlight, { passive: true });
+    window.addEventListener("resize", updateFlight);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", updateFlight);
+      window.removeEventListener("resize", updateFlight);
+      reset();
+      flight.remove();
+    };
+  }, []);
+
   const navigate = (id: string) => {
     dispatch(setMenuOpen(false));
     document
       .getElementById(id)
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const changeTheme = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const root = document.documentElement;
+    const transitionDocument = document as ViewTransitionDocument;
+    const startViewTransition = transitionDocument.startViewTransition;
+
+    if (
+      !startViewTransition ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      dispatch(toggleTheme());
+      return;
+    }
+
+    const buttonBounds = event.currentTarget.getBoundingClientRect();
+    root.style.setProperty(
+      "--theme-origin-x",
+      `${buttonBounds.left + buttonBounds.width / 2}px`,
+    );
+    root.style.setProperty(
+      "--theme-origin-y",
+      `${buttonBounds.top + buttonBounds.height / 2}px`,
+    );
+    root.classList.add("theme-transition-active");
+
+    const transition = startViewTransition.call(transitionDocument, () => {
+      flushSync(() => dispatch(toggleTheme()));
+    });
+    const cleanup = () => root.classList.remove("theme-transition-active");
+    transition.finished.then(cleanup, cleanup);
   };
 
   return (
@@ -63,6 +191,7 @@ export default function Header() {
           aria-label="Go to home"
         >
           SK<span>.</span>
+          <img className="brand-mark__avatar" src={profileImage} alt="" />
         </button>
         <nav
           id="primary-navigation"
@@ -93,7 +222,7 @@ export default function Header() {
         <div className="nav-actions">
           <button
             className="icon-button theme-toggle"
-            onClick={() => dispatch(toggleTheme())}
+            onClick={changeTheme}
             aria-label={`Switch to ${theme === "light" ? "dark" : "light"} theme`}
             aria-pressed={theme === "dark"}
           >

@@ -1,5 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap");
 
+@property --bg {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #f8faff;
+}
+
+@property --surface {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ffffff;
+}
+
+@property --surface-soft {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #fbfcff;
+}
+
+@property --text {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #1d1d1f;
+}
+
+@property --muted {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #6e6e73;
+}
+
+@property --muted-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #62666f;
+}
+
+@property --line {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: rgba(29, 45, 70, 0.1);
+}
+
+@property --line-strong {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: rgba(0, 113, 227, 0.28);
+}
+
+@property --blue {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #0071e3;
+}
+
+@property --blue-bright {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #2997ff;
+}
+
+@property --blue-soft {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #eaf4ff;
+}
+
+@property --header-bg {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: rgba(250, 252, 255, 0.86);
+}
+
 :root {
   color-scheme: light;
   --bg: #f8faff;
@@ -17,6 +89,46 @@
   --header-bg: rgba(250, 252, 255, 0.86);
   --mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   --sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    transition:
+      --bg 350ms ease,
+      --surface 350ms ease,
+      --surface-soft 350ms ease,
+      --text 350ms ease,
+      --muted 350ms ease,
+      --muted-2 350ms ease,
+      --line 350ms ease,
+      --line-strong 350ms ease,
+      --blue 350ms ease,
+      --blue-bright 350ms ease,
+      --blue-soft 350ms ease,
+      --header-bg 350ms ease;
+  }
+
+  :root.theme-transition-active {
+    transition: none !important;
+  }
+
+  @keyframes theme-reveal {
+    from {
+      clip-path: circle(0 at var(--theme-origin-x) var(--theme-origin-y));
+    }
+
+    to {
+      clip-path: circle(150vmax at var(--theme-origin-x) var(--theme-origin-y));
+    }
+  }
+
+  ::view-transition-old(root) {
+    animation: none;
+  }
+
+  ::view-transition-new(root) {
+    animation: theme-reveal 900ms linear 0ms both;
+  }
 }
 
 :root[data-theme="dark"] {
@@ -141,6 +253,22 @@ button {
   backdrop-filter: saturate(180%) blur(18px);
   -webkit-backdrop-filter: saturate(180%) blur(18px);
 }
+.profile-brand-flight {
+  position: fixed;
+  z-index: 60;
+  display: none;
+  overflow: hidden;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.profile-brand-flight img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 32%;
+}
 .nav-shell {
   display: flex;
   align-items: center;
@@ -161,6 +289,26 @@ button {
   font-weight: 800;
   letter-spacing: -0.09em;
   cursor: pointer;
+}
+.brand-mark {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+}
+.brand-mark__avatar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 32%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1);
 }
 .brand-mark span,
 .footer-brand span {

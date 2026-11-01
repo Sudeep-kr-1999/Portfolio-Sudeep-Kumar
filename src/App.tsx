@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setActiveSection } from "./app/uiSlice";
 import type { AppDispatch, RootState } from "./app/store";
@@ -16,7 +16,7 @@ export default function App() {
   const dispatch = useDispatch<AppDispatch>();
   const theme = useSelector((state: RootState) => state.ui.theme);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     document.documentElement.dataset.theme = theme;
     document
       .querySelector('meta[name="theme-color"]')
