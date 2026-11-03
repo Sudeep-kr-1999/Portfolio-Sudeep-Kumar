@@ -7,8 +7,6 @@ import {
   Layers3,
   Workflow,
 } from "lucide-react";
-import { useSelector } from "react-redux";
-import type { RootState } from "../app/store";
 
 const projects = [
   {
@@ -60,14 +58,8 @@ const projects = [
 
 export default function ProjectsSection() {
   const [expanded, setExpanded] = useState("01");
-  const activeSection = useSelector(
-    (state: RootState) => state.ui.activeSection,
-  );
   return (
-    <section
-      id="projects"
-      className={`section projects-section${activeSection === "projects" ? " is-current-section" : ""}`}
-    >
+    <section id="projects" className="section projects-section">
       <div className="page-wrap">
         <div className="remote-section-topline">
           <span>

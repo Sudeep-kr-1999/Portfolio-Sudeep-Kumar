@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { flushSync } from "react-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { setMenuOpen, toggleTheme } from "../app/uiSlice";
+import { setActiveSection, setMenuOpen, toggleTheme } from "../app/uiSlice";
 import type { AppDispatch, RootState } from "../app/store";
 import { profile } from "../data/portfolio";
 import profileImage from "../../public/Profile.jpeg";
@@ -23,7 +23,7 @@ type ViewTransitionDocument = Document & {
 };
 
 export default function Header() {
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const progressRef = useRef<HTMLSpanElement>(null);
   const dispatch = useDispatch<AppDispatch>();
   const { theme, menuOpen, activeSection } = useSelector(
     (state: RootState) => state.ui,
@@ -37,10 +37,13 @@ export default function Header() {
         frame = 0;
         const scrollable =
           document.documentElement.scrollHeight - window.innerHeight;
-        setScrollProgress(
+        const progress =
           scrollable > 0
             ? Math.max(0, Math.min(1, window.scrollY / scrollable))
-            : 0,
+            : 0;
+        progressRef.current?.style.setProperty(
+          "transform",
+          `scaleX(${progress})`,
         );
       });
     };
@@ -59,7 +62,7 @@ export default function Header() {
     const profileImage = document.querySelector<HTMLImageElement>(
       ".hero-profile img",
     );
-    const brandMark = document.querySelector<HTMLButtonElement>(".brand-mark");
+    const brandMark = document.querySelector<HTMLAnchorElement>(".brand-mark");
     const brandImage =
       brandMark?.querySelector<HTMLImageElement>(".brand-mark__avatar");
     const brandText = brandMark?.querySelector<HTMLSpanElement>(":scope > span");
@@ -144,11 +147,32 @@ export default function Header() {
     };
   }, []);
 
-  const navigate = (id: string) => {
+  const navigate = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    id: string,
+  ) => {
+    event.preventDefault();
     dispatch(setMenuOpen(false));
-    document
-      .getElementById(id)
-      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    dispatch(setActiveSection(id));
+
+    const section = document.getElementById(id);
+    if (!section) return;
+
+    window.dispatchEvent(new CustomEvent("sectionnavigation", { detail: id }));
+    window.history.pushState(null, "", `#${id}`);
+    const headerHeight =
+      document.querySelector(".site-header")?.getBoundingClientRect().height ??
+      0;
+    const top = Math.max(
+      0,
+      section.getBoundingClientRect().top + window.scrollY - headerHeight,
+    );
+    window.scrollTo({
+      top,
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "auto"
+        : "smooth",
+    });
   };
 
   const changeTheme = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -185,29 +209,32 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="nav-shell">
-        <button
+        <a
           className="brand-mark"
-          onClick={() => navigate("home")}
+          href="#home"
+          onClick={(event) => navigate(event, "home")}
           aria-label="Go to home"
         >
           SK<span>.</span>
           <img className="brand-mark__avatar" src={profileImage} alt="" />
-        </button>
+        </a>
         <nav
           id="primary-navigation"
           className={`main-nav${menuOpen ? " main-nav--open" : ""}`}
           aria-label="Main navigation"
         >
           {links.map(([id, label]) => (
-            <button
+            <a
               key={id}
               className={
                 activeSection === id ? "nav-link nav-link--active" : "nav-link"
               }
-              onClick={() => navigate(id)}
+              href={`#${id}`}
+              onClick={(event) => navigate(event, id)}
+              aria-current={activeSection === id ? "location" : undefined}
             >
               {label}
-            </button>
+            </a>
           ))}
           <a
             className="nav-resume"
@@ -240,7 +267,7 @@ export default function Header() {
         </div>
       </div>
       <div className="scroll-progress" aria-hidden="true">
-        <span style={{ transform: `scaleX(${scrollProgress})` }} />
+        <span ref={progressRef} />
       </div>
     </header>
   );

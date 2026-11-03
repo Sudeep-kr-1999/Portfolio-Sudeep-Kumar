@@ -1,6 +1,4 @@
 import { ArrowUpRight, BriefcaseBusiness, Check } from "lucide-react";
-import { useSelector } from "react-redux";
-import type { RootState } from "../app/store";
 
 const roles = [
   {
@@ -94,14 +92,8 @@ const roles = [
 ];
 
 export default function ExperienceSection() {
-  const activeSection = useSelector(
-    (state: RootState) => state.ui.activeSection,
-  );
   return (
-    <section
-      id="experience"
-      className={`section experience-section${activeSection === "experience" ? " is-current-section" : ""}`}
-    >
+    <section id="experience" className="section experience-section">
       <div className="page-wrap">
         <div className="remote-section-topline">
           <span>

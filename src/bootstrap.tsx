@@ -5,6 +5,14 @@ import App from "./App";
 import { store } from "./app/store";
 import "./styles/global.css";
 
+window.history.scrollRestoration = "manual";
+window.history.replaceState(
+  null,
+  "",
+  `${window.location.pathname}${window.location.search}`,
+);
+window.scrollTo({ top: 0, behavior: "instant" });
+
 const rootElement = document.getElementById("root");
 
 if (!rootElement) {
